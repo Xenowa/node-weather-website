@@ -8,6 +8,7 @@ To get started run the following commands:
 
 ```
 git clone URL
+cd node-weather-website
 npm install
 npm start
 ```
