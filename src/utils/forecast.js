@@ -2,7 +2,7 @@ const request = require("request");
 
 const forecast = (lat, long, callback) => {
     const type = "current";
-    const KEY = "8d7dccb22e05ec6e5595b4d0bd8a5d52";
+    const KEY = process.env.FORECAST_KEY;
     const LATITUDE = lat;
     const LONGITUDE = long;
     const QUERY = `${LATITUDE},${LONGITUDE}`;

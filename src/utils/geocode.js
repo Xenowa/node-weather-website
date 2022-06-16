@@ -1,7 +1,7 @@
 const request = require("request");
 
 const geoCode = (address, callBack) => {
-    const KEY = "pk.eyJ1IjoieGVub2NvZGVjcyIsImEiOiJjbDM5cm5qMDQwY2gzM2lvNmx2MzRvaWViIn0.Cu6eEuwePlKfuU-iejEjYQ";
+    const KEY = process.env.GEOCODE_KEY;
     const COUNTRY = address;
     const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${COUNTRY}.json?access_token=${KEY}`;
 
